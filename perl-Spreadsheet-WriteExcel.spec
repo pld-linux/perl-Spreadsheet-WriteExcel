@@ -23,13 +23,13 @@ Summary(sv):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::WriteExcel
 Summary(zh_CN):	Spreadsheet::WriteExcel Perl Ä£¿é
 Name:		perl-Spreadsheet-WriteExcel
-Version:	0.43
+Version:	2.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f48b3182994f4aa9bc12f20ea4b0e1a1
+# Source0-md5:	b59caf9cffb69de9e96827af70824438
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-modules >= 5.6.1
@@ -58,8 +58,7 @@ Pliki Excela produkowane przez ten modu³ s± kompatybilne z Excelem 5,
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-mv WriteExcel/examples .
-mv WriteExcel/doc html
+mv doc html
 
 %build
 %{__perl} Makefile.PL \
@@ -74,6 +73,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 install examples/{README,*.pl,*.bmp} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 gzip -9 $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/README
 
