@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Spreadsheet::WriteExcel
 Summary(it):	Modulo di Perl Spreadsheet::WriteExcel
 Summary(ja):	Spreadsheet::WriteExcel Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Spreadsheet::WriteExcel ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Spreadsheet::WriteExcel
+Summary(nb):	Perlmodul Spreadsheet::WriteExcel
 Summary(pl):	Modu³ Perla Spreadsheet::WriteExcel
 Summary(pt):	Módulo de Perl Spreadsheet::WriteExcel
 Summary(pt_BR):	Módulo Perl Spreadsheet::WriteExcel
