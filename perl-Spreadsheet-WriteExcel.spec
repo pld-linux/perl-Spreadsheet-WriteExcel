@@ -24,11 +24,11 @@ Summary(uk):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN):	Spreadsheet::WriteExcel Perl дё©И
 Name:		perl-Spreadsheet-WriteExcel
 Version:	0.40
-Release:	0.1
+Release:	1.1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-modules >= 5.6.1
 BuildRequires:	perl-Parse-RecDescent
@@ -60,7 +60,8 @@ mv WriteExcel/examples .
 mv WriteExcel/doc html
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -78,9 +79,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README html
-%{perl_sitelib}/Spreadsheet/WriteExcel.pm
-%dir %{perl_sitelib}/Spreadsheet/WriteExcel
-%{perl_sitelib}/Spreadsheet/WriteExcel/*.pm
+%{perl_vendorlib}/Spreadsheet/WriteExcel.pm
+%dir %{perl_vendorlib}/Spreadsheet/WriteExcel
+%{perl_vendorlib}/Spreadsheet/WriteExcel/*.pm
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/README*
