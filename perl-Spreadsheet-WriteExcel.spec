@@ -23,7 +23,7 @@ Summary(sv):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN):	Spreadsheet::WriteExcel Perl дё©И
 Name:		perl-Spreadsheet-WriteExcel
-Version:	0.39
+Version:	0.40
 Release:	0.1
 License:	GPL
 Group:		Development/Languages/Perl
