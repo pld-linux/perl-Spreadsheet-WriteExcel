@@ -23,12 +23,12 @@ Summary(sv):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN):	Spreadsheet::WriteExcel Perl дё©И
 Name:		perl-Spreadsheet-WriteExcel
-Version:	0.42
+Version:	0.43
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	164e6d454132c86c33168b45456c3e0b
+# Source0-md5:	f48b3182994f4aa9bc12f20ea4b0e1a1
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-modules >= 5.6.1
