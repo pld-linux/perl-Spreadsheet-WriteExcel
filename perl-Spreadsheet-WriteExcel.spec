@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Spreadsheet
-%define	pnam	WriteExcel
+%define		pdir	Spreadsheet
+%define		pnam	WriteExcel
 Summary:	Spreadsheet::WriteExcel perl module
 Summary(cs):	Modul Spreadsheet::WriteExcel pro Perl
 Summary(da):	Perlmodul Spreadsheet::WriteExcel
