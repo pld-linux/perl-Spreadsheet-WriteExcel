@@ -22,7 +22,6 @@ Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::WriteExcel
 Summary(sv):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::WriteExcel
 Summary(zh_CN):	Spreadsheet::WriteExcel Perl Ä£¿é
-Summary(pl):	Modu³ perla Spreadsheet::WriteExcel
 Name:		perl-Spreadsheet-WriteExcel
 Version:	0.39
 Release:	0.1
@@ -42,8 +41,8 @@ platform Excel binary file. Multiple worksheets can be added to a
 workbook and formatting can be applied to cells. Text, numbers,
 formulas, hyperlinks and images can be written to the cells.
 
-The Excel file produced by this module is compatible with Excel 5,
-95, 97, 2000 and 2002.
+The Excel file produced by this module is compatible with Excel 5, 95,
+97, 2000 and 2002.
 
 %description -l pl
 Modu³ Spreadsheet::WriteExcel mo¿e byæ u¿ywany do tworzenia
