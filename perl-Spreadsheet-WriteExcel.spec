@@ -27,7 +27,17 @@ formulas, hyperlinks and images can be written to the cells.
 
 The Excel file produced by this module is compatible with Excel 5,
 95, 97, 2000 and 2002.
-												
+
+%description -l pl
+Modu³ Spreadsheet::WriteExcel mo¿e byæ u¿ywany do tworzenia
+miêdzyplatformowych plików binarnych Excela. Wiele arkuszy mo¿e byæ
+dodanych do jednej ksiêgi, a w komórkach mo¿na u¿ywaæ formatowania.
+Tekst, liczby, formu³y, odno¶niki i obrazki mog± byæ wpisywane do
+komórek.
+
+Pliki Excela produkowane przez ten modu³ s± kompatybilne z Excelem 5,
+95, 97, 2000 i 2002.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 mv WriteExcel/examples .
