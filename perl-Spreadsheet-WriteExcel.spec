@@ -25,7 +25,8 @@ Summary(zh_CN):	Spreadsheet::WriteExcel Perl Ä£¿é
 Name:		perl-Spreadsheet-WriteExcel
 Version:	0.43
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f48b3182994f4aa9bc12f20ea4b0e1a1
