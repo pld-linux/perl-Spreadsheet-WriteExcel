@@ -60,7 +60,7 @@ mv WriteExcel/examples .
 mv WriteExcel/doc html
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{!?_without_tests:%{__make} test}
 
