@@ -8,7 +8,7 @@ Summary:	Spreadsheet::WriteExcel perl module
 Summary(pl):	Modu³ perla Spreadsheet::WriteExcel
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.38
-Release:	1
+Release:	0.1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
