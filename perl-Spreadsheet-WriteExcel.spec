@@ -1,14 +1,31 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Spreadsheet
-%define	pnam	WriteExcel
+%define		pdir	Spreadsheet
+%define		pnam	WriteExcel
 Summary:	Spreadsheet::WriteExcel perl module
+Summary(cs):	Modul Spreadsheet::WriteExcel pro Perl
+Summary(da):	Perlmodul Spreadsheet::WriteExcel
+Summary(de):	Spreadsheet::WriteExcel Perl Modul
+Summary(es):	Módulo de Perl Spreadsheet::WriteExcel
+Summary(fr):	Module Perl Spreadsheet::WriteExcel
+Summary(it):	Modulo di Perl Spreadsheet::WriteExcel
+Summary(ja):	Spreadsheet::WriteExcel Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Spreadsheet::WriteExcel ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Spreadsheet::WriteExcel
+Summary(pl):	Modu³ Perla Spreadsheet::WriteExcel
+Summary(pt):	Módulo de Perl Spreadsheet::WriteExcel
+Summary(pt_BR):	Módulo Perl Spreadsheet::WriteExcel
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::WriteExcel
+Summary(sv):	Spreadsheet::WriteExcel Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::WriteExcel
+Summary(zh_CN):	Spreadsheet::WriteExcel Perl Ä£¿é
 Summary(pl):	Modu³ perla Spreadsheet::WriteExcel
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Spreadsheet-WriteExcel
 Version:	0.38
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -54,6 +71,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 install examples/{README,*.pl,*.bmp} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+gzip -9 %{_examplesdir}/%{name}-%{version}/README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -62,6 +80,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README html
 %{perl_sitelib}/Spreadsheet/WriteExcel.pm
+%dir %{perl_sitelib}/Spreadsheet/WriteExcel
 %{perl_sitelib}/Spreadsheet/WriteExcel/*.pm
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{version}
+%dir %{_examplesdir}/%{name}-%{version}
+%{_examplesdir}/%{name}-%{version}/README*
+%{_examplesdir}/%{name}-%{version}/*.bmp
+%{_examplesdir}/%{name}-%{version}/mo*.pl
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/m[^o]*.pl
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/[^m]*.pl
