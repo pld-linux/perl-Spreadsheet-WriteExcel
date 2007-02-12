@@ -6,22 +6,22 @@
 %define		pdir	Spreadsheet
 %define		pnam	WriteExcel
 Summary:	Spreadsheet::WriteExcel perl module
-Summary(cs):	Modul Spreadsheet::WriteExcel pro Perl
-Summary(da):	Perlmodul Spreadsheet::WriteExcel
-Summary(de):	Spreadsheet::WriteExcel Perl Modul
-Summary(es):	MÛdulo de Perl Spreadsheet::WriteExcel
-Summary(fr):	Module Perl Spreadsheet::WriteExcel
-Summary(it):	Modulo di Perl Spreadsheet::WriteExcel
-Summary(ja):	Spreadsheet::WriteExcel Perl •‚•∏•Â°º•Î
-Summary(ko):	Spreadsheet::WriteExcel ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul Spreadsheet::WriteExcel
-Summary(pl):	Modu≥ Perla Spreadsheet::WriteExcel
-Summary(pt):	MÛdulo de Perl Spreadsheet::WriteExcel
-Summary(pt_BR):	MÛdulo Perl Spreadsheet::WriteExcel
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl Spreadsheet::WriteExcel
-Summary(sv):	Spreadsheet::WriteExcel Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl Spreadsheet::WriteExcel
-Summary(zh_CN):	Spreadsheet::WriteExcel Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul Spreadsheet::WriteExcel pro Perl
+Summary(da.UTF-8):   Perlmodul Spreadsheet::WriteExcel
+Summary(de.UTF-8):   Spreadsheet::WriteExcel Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl Spreadsheet::WriteExcel
+Summary(fr.UTF-8):   Module Perl Spreadsheet::WriteExcel
+Summary(it.UTF-8):   Modulo di Perl Spreadsheet::WriteExcel
+Summary(ja.UTF-8):   Spreadsheet::WriteExcel Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   Spreadsheet::WriteExcel ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul Spreadsheet::WriteExcel
+Summary(pl.UTF-8):   Modu≈Ç Perla Spreadsheet::WriteExcel
+Summary(pt.UTF-8):   M√≥dulo de Perl Spreadsheet::WriteExcel
+Summary(pt_BR.UTF-8):   M√≥dulo Perl Spreadsheet::WriteExcel
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Spreadsheet::WriteExcel
+Summary(sv.UTF-8):   Spreadsheet::WriteExcel Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Spreadsheet::WriteExcel
+Summary(zh_CN.UTF-8):   Spreadsheet::WriteExcel Perl Ê®°Âùó
 Name:		perl-Spreadsheet-WriteExcel
 Version:	2.17
 Release:	1
@@ -46,14 +46,14 @@ formulas, hyperlinks and images can be written to the cells.
 The Excel file produced by this module is compatible with Excel 5, 95,
 97, 2000 and 2002.
 
-%description -l pl
-Modu≥ Spreadsheet::WriteExcel moøe byÊ uøywany do tworzenia
-miÍdzyplatformowych plikÛw binarnych Excela. Wiele arkuszy moøe byÊ
-dodanych do jednej ksiÍgi, a w komÛrkach moøna uøywaÊ formatowania.
-Tekst, liczby, formu≥y, odno∂niki i obrazki mog± byÊ wpisywane do
-komÛrek.
+%description -l pl.UTF-8
+Modu≈Ç Spreadsheet::WriteExcel mo≈ºe byƒá u≈ºywany do tworzenia
+miƒôdzyplatformowych plik√≥w binarnych Excela. Wiele arkuszy mo≈ºe byƒá
+dodanych do jednej ksiƒôgi, a w kom√≥rkach mo≈ºna u≈ºywaƒá formatowania.
+Tekst, liczby, formu≈Çy, odno≈õniki i obrazki mogƒÖ byƒá wpisywane do
+kom√≥rek.
 
-Pliki Excela produkowane przez ten modu≥ s± kompatybilne z Excelem 5,
+Pliki Excela produkowane przez ten modu≈Ç sƒÖ kompatybilne z Excelem 5,
 95, 97, 2000 i 2002.
 
 %prep
