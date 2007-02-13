@@ -6,22 +6,22 @@
 %define		pdir	Spreadsheet
 %define		pnam	WriteExcel
 Summary:	Spreadsheet::WriteExcel perl module
-Summary(cs.UTF-8):   Modul Spreadsheet::WriteExcel pro Perl
-Summary(da.UTF-8):   Perlmodul Spreadsheet::WriteExcel
-Summary(de.UTF-8):   Spreadsheet::WriteExcel Perl Modul
-Summary(es.UTF-8):   Módulo de Perl Spreadsheet::WriteExcel
-Summary(fr.UTF-8):   Module Perl Spreadsheet::WriteExcel
-Summary(it.UTF-8):   Modulo di Perl Spreadsheet::WriteExcel
-Summary(ja.UTF-8):   Spreadsheet::WriteExcel Perl モジュール
-Summary(ko.UTF-8):   Spreadsheet::WriteExcel 펄 모줄
-Summary(nb.UTF-8):   Perlmodul Spreadsheet::WriteExcel
-Summary(pl.UTF-8):   Moduł Perla Spreadsheet::WriteExcel
-Summary(pt.UTF-8):   Módulo de Perl Spreadsheet::WriteExcel
-Summary(pt_BR.UTF-8):   Módulo Perl Spreadsheet::WriteExcel
-Summary(ru.UTF-8):   Модуль для Perl Spreadsheet::WriteExcel
-Summary(sv.UTF-8):   Spreadsheet::WriteExcel Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl Spreadsheet::WriteExcel
-Summary(zh_CN.UTF-8):   Spreadsheet::WriteExcel Perl 模块
+Summary(cs.UTF-8):	Modul Spreadsheet::WriteExcel pro Perl
+Summary(da.UTF-8):	Perlmodul Spreadsheet::WriteExcel
+Summary(de.UTF-8):	Spreadsheet::WriteExcel Perl Modul
+Summary(es.UTF-8):	Módulo de Perl Spreadsheet::WriteExcel
+Summary(fr.UTF-8):	Module Perl Spreadsheet::WriteExcel
+Summary(it.UTF-8):	Modulo di Perl Spreadsheet::WriteExcel
+Summary(ja.UTF-8):	Spreadsheet::WriteExcel Perl モジュール
+Summary(ko.UTF-8):	Spreadsheet::WriteExcel 펄 모줄
+Summary(nb.UTF-8):	Perlmodul Spreadsheet::WriteExcel
+Summary(pl.UTF-8):	Moduł Perla Spreadsheet::WriteExcel
+Summary(pt.UTF-8):	Módulo de Perl Spreadsheet::WriteExcel
+Summary(pt_BR.UTF-8):	Módulo Perl Spreadsheet::WriteExcel
+Summary(ru.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
+Summary(sv.UTF-8):	Spreadsheet::WriteExcel Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
+Summary(zh_CN.UTF-8):	Spreadsheet::WriteExcel Perl 模块
 Name:		perl-Spreadsheet-WriteExcel
 Version:	2.17
 Release:	1
