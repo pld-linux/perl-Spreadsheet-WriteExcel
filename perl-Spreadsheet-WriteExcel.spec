@@ -24,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN.UTF-8):	Spreadsheet::WriteExcel Perl 模块
 Name:		perl-Spreadsheet-WriteExcel
 Version:	2.17
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
