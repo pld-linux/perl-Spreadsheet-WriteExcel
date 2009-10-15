@@ -23,17 +23,17 @@ Summary(sv.UTF-8):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN.UTF-8):	Spreadsheet::WriteExcel Perl 模块
 Name:		perl-Spreadsheet-WriteExcel
-Version:	2.17
-Release:	2
+Version:	2.25
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	996967698c8c24bda236ada8f06e0214
-BuildRequires:	rpm-perlprov >= 4.1-13
+# Source0-md5:	ad70e5b031c0af60c50a72d8b09240c9
+BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-modules >= 5.6.1
-BuildRequires:	perl-Parse-RecDescent
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -74,7 +74,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/{README,*.pl,*.bmp} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install examples/{README,*.pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 gzip -9 $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/README
 
 %clean
@@ -82,14 +82,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/chartex
 %doc Changes README html
 %{perl_vendorlib}/Spreadsheet/WriteExcel.pm
 %dir %{perl_vendorlib}/Spreadsheet/WriteExcel
 %{perl_vendorlib}/Spreadsheet/WriteExcel/*.pm
-%{_mandir}/man3/*
+%{_mandir}/man?/*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/README*
-%{_examplesdir}/%{name}-%{version}/*.bmp
 %{_examplesdir}/%{name}-%{version}/mo*.pl
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/m[^o]*.pl
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/[^m]*.pl
