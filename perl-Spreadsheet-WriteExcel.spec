@@ -23,13 +23,13 @@ Summary(sv.UTF-8):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN.UTF-8):	Spreadsheet::WriteExcel Perl 模块
 Name:		perl-Spreadsheet-WriteExcel
-Version:	2.25
+Version:	2.37
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ad70e5b031c0af60c50a72d8b09240c9
+# Source0-md5:	07e038429dc7d7467c735e467cc1cfbe
 BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-modules >= 5.6.1
@@ -58,7 +58,7 @@ Pliki Excela produkowane przez ten moduł są kompatybilne z Excelem 5,
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-mv doc html
+mv docs html
 
 %build
 %{__perl} Makefile.PL \
@@ -87,6 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Spreadsheet/WriteExcel.pm
 %dir %{perl_vendorlib}/Spreadsheet/WriteExcel
 %{perl_vendorlib}/Spreadsheet/WriteExcel/*.pm
+%{perl_vendorlib}/Spreadsheet/WriteExcel/Chart
 %{_mandir}/man?/*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/README*
