@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Spreadsheet
 %define		pnam	WriteExcel
+%include	/usr/lib/rpm/macros.perl
 Summary:	Spreadsheet::WriteExcel perl module
 Summary(cs.UTF-8):	Modul Spreadsheet::WriteExcel pro Perl
 Summary(da.UTF-8):	Perlmodul Spreadsheet::WriteExcel
@@ -30,6 +30,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	07e038429dc7d7467c735e467cc1cfbe
+URL:		http://search.cpan.org/dist/Spreadsheet-WriteExcel/
 BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-modules >= 5.6.1
@@ -74,7 +75,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/{README,*.pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/{README,*.pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 gzip -9 $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/README
 
 %clean
