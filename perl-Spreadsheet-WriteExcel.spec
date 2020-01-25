@@ -4,7 +4,6 @@
 
 %define		pdir	Spreadsheet
 %define		pnam	WriteExcel
-%include	/usr/lib/rpm/macros.perl
 Summary:	Spreadsheet::WriteExcel perl module
 Summary(cs.UTF-8):	Modul Spreadsheet::WriteExcel pro Perl
 Summary(da.UTF-8):	Perlmodul Spreadsheet::WriteExcel
