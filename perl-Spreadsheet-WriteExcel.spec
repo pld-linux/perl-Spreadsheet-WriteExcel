@@ -22,13 +22,13 @@ Summary(sv.UTF-8):	Spreadsheet::WriteExcel Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl Spreadsheet::WriteExcel
 Summary(zh_CN.UTF-8):	Spreadsheet::WriteExcel Perl 模块
 Name:		perl-Spreadsheet-WriteExcel
-Version:	2.37
-Release:	2
+Version:	2.40
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	07e038429dc7d7467c735e467cc1cfbe
+Source0:	https://www.cpan.org/authors/id/J/JM/JMCNAMARA/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	b3262290e96985ee12d81c861a389790
 URL:		http://search.cpan.org/dist/Spreadsheet-WriteExcel/
 BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	perl-devel >= 1:5.8.0
